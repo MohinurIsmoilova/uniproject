@@ -21,16 +21,19 @@ const MenuProps = {
 // array
 
 const names = [
-  "Oliver Hansen",
-  "Van Henry",
-  "April Tucker",
-  "Ralph Hubbard",
-  "Omar Alexander",
-  "Carlos Abbott",
-  "Miriam Wagner",
-  "Bradley Wilkerson",
-  "Virginia Andrews",
-  "Kelly Snyder",
+  "состояния больного",
+  "состояния человека",
+  "у больного",
+  "человек",
+];
+
+
+
+const imgs = [
+  "приступ неврологии",
+  "является анимия ",
+  "бессоница",
+  "нервное заболевание",
 ];
 
 // array
@@ -233,7 +236,7 @@ export const Main = () => {
                 onChange={handleChange1}
                 label="Age"
               >
-                {names.map((name) => (
+                {imgs.map((name) => (
                   <MenuItem
                     key={name}
                     value={name}
